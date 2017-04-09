@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "Dropped" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "application", 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="off-canvas-wrapper">
+      <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+        <ul class="vertical menu">
+          <li><%= link_to 'Drop & Manage Songs', root_path%></li>
+          <li><%= link_to 'Profile', root_path%></li>
+          <li><%= link_to 'Upload new Song', root_path%></li>
+          <li><%= link_to 'Close Menu', '#'%></li>
+        </ul>
+      </div>
+
+      <div class="off-canvas-content" data-off-canvas-content>
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>

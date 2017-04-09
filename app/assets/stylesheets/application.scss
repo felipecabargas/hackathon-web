@@ -1,0 +1,98 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require foundation_and_overrides
+
+ */
+
+ @import url('https://fonts.googleapis.com/css?family=Roboto');
+ h1, h2, h3, h4, h5, h6, a, ul, ol, li{
+   font-family: 'Roboto', sans-serif;
+ }
+
+ body{
+   background-color: #F2F2F2;
+   background-image: url(image_path('vinyl.jpg'));
+   background-size: 100% 100%;
+   min-height: 100vh;
+ }
+
+ /* CANVAS */
+ #offCanvas{
+   background-color: rgba(1, 51, 62, 0.9);
+ }
+
+ .menu > li > a{
+   color: #F9FBE7;
+ }
+
+ /* TITLE BAR */
+ .title-bar {
+   height: 8.5vh;
+   background: #01333E;
+   color: #F9FBE7;
+ }
+
+ .title-bar .menu-icon .title-bar-title{
+   padding-left: 1em;
+   color: #f9fbe7;
+ }
+
+ .title-bar .menu-icon{
+   padding-left: 1em;
+   margin-top: 0.5em;
+ }
+
+ .title-bar-right{
+   padding-right: 1em;
+   margin-top: 0.5em;
+   color: #f9fbe7;
+ }
+
+
+ /* FIRST SECTION */
+ .first-section{
+   padding: 175px 0;
+   margin-bottom: 30px;
+   height: 81.5vh;
+   margin: 0 auto;
+   width: 100%;
+   position: relative;
+ }
+
+ .first-section #login-container{
+   background: rgba(243, 215, 150, 0.5);
+ }
+
+ #login-container .button{
+   background-color: #01333E;
+   color: #F3D895;
+   font-family: 'Roboto', sans-serif;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ #login-container a{
+   color: #01333E;
+ }
+
+ .column:last-child:not(:first-child), .columns:last-child:not(:first-child){
+   float: left;
+ }
+
+
+img.page-logo{
+  max-height: 100px;
+}

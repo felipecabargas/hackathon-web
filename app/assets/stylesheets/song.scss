@@ -1,0 +1,64 @@
+// Place all the styles related to the Song controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+/* PROFILE */
+.songs-section{
+  padding: 4em 0;
+  margin: 0 auto 2em auto;
+  width: 100%;
+  position: relative;
+}
+
+#songs-container > table > tbody > tr > td{
+  background: rgba(1, 51, 62, 0.2);
+  color: #01333E;
+  margin-bottom: 1em;
+}
+
+
+#songs-container h4{
+  margin-top: 0.8em;
+  margin-bottom: 0em;
+  font-size: 1em;
+  padding-left: 1em;
+}
+
+#songs-container p{
+  font-size: 0.7em;
+  margin-top: 0em;
+  color: grey;
+  padding-left: 1.4em;
+}
+
+#songs-container button{
+  background-color: transparent;
+  color: #01333E;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -0.5em;
+}
+
+i.material-icons{
+  font-size: 3em;
+}
+
+table tbody th, table tbody td{
+  padding: 0 1em;
+}
+
+.upload button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #01333E;
+  color: #F9FBE7;
+}
+
+.upload button:hover{
+  background-color: #01333E;
+}
+
+.upload button:focus{
+  background-color: #01333E;
+}
